@@ -4,7 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
     <title>Chat-Stream</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="user-options">
+        <div>Hi, <span id="name"></span></div>
+        <div id="change-name">change name</div>
+      </div>
+
+      <form id="message-form">
+        <input type="text" id="message-input" placeholder="message" required />
+        <button class="orange-button">send</button>
+      </form>
+
+      <div id="messages"></div>
+      <button id="clear" class="purple-button">Clear All messages</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
